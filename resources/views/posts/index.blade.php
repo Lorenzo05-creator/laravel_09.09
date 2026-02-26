@@ -6,7 +6,7 @@
             <div class="col-md-4">
                 <div class="card mb-3">
                     @if($post->image)
-                        <img src="{{ asset('storage/'.$post->image) }}" class="card-img-top">
+                        <img src="/storage/{{ $post->image }}" class="card-img-top" alt="Immagine del post">
                     @endif
                     <div class="card-body">
                         <h5>{{ $post->title }}</h5>
